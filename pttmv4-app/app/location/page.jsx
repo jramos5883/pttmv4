@@ -20,20 +20,20 @@ export default function Location() {
         ></iframe>
       </div>
       <div className="container flex flex-col text-center xl:max-w-3xl 2xl:max-w-5xl">
-        <p className="py-2">
+        <p className="pt-2">
           <span className={`text-3xl text-bold ${luckietGuy.className}`}>
             Business Information
           </span>
         </p>
         <div className="">
-          <div className="font-mono text-lg py-2">
-            <p className="font-mono text-lg py-2">Address: </p>
+          <div>
+            <p className="font-mono text-lg pb-2">Address: </p>
             <p className="font-mono text-lg py-2">
               1500 E Village Way, Ste 2221 Orange, Ca 92865
             </p>
 
             <p className="font-mono text-lg py-2">Phone Number: </p>
-            <p className="font-mono text-lg py-2">(657)224-9081</p>
+            <p className="font-mono text-lg py-2">(657) 224-9081</p>
           </div>
           <div className="">
             <p className="font-mono text-lg py-2">Business Hours: </p>
