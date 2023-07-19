@@ -19,26 +19,31 @@ export default function Location() {
           src={googleMapsUrl}
         ></iframe>
       </div>
-      <div className="container flex flex-col text-center xl:max-w-2xl 2xl:max-w-7xl">
-        <p className={luckietGuy.className}>
-          <span className="text-3xl text-bold">Buisness Information</span>
+      <div className="container flex flex-col text-center xl:max-w-3xl 2xl:max-w-5xl">
+        <p className="py-2">
+          <span className={`text-3xl text-bold ${luckietGuy.className}`}>
+            Business Information
+          </span>
         </p>
         <div className="">
-          <div className="">
-            <p>Address:</p>
-            <p>1500 E Village Way, Ste 2221 Orange, Ca 92865</p>
+          <div className="font-mono text-lg py-2">
+            <p className="font-mono text-lg py-2">Address: </p>
+            <p className="font-mono text-lg py-2">
+              1500 E Village Way, Ste 2221 Orange, Ca 92865
+            </p>
 
-            <p>Phone Number: </p>
-            <p>(657)224-9081</p>
+            <p className="font-mono text-lg py-2">Phone Number: </p>
+            <p className="font-mono text-lg py-2">(657)224-9081</p>
           </div>
           <div className="">
-            <p>Monday: 11:00AM - 7:00PM</p>
-            <p>Tuesday: 11:00AM - 7:00PM</p>
-            <p>Wensday: 11:00AM - 7:00PM</p>
-            <p>Thursday: 11:00AM - 7:00PM</p>
-            <p>Friday: 11:00AM - 7:00PM</p>
-            <p>Saturday: 11:00AM - 6:30PM</p>
-            <p>Sunday: Closed</p>
+            <p className="font-mono text-lg py-2">Business Hours: </p>
+            <p className="font-mono text-lg">Monday: 11:00AM - 7:00PM</p>
+            <p className="font-mono text-lg">Tuesday: 11:00AM - 7:00PM</p>
+            <p className="font-mono text-lg">Wensday: 11:00AM - 7:00PM</p>
+            <p className="font-mono text-lg">Thursday: 11:00AM - 7:00PM</p>
+            <p className="font-mono text-lg">Friday: 11:00AM - 7:00PM</p>
+            <p className="font-mono text-lg">Saturday: 11:00AM - 6:30PM</p>
+            <p className="font-mono text-lg pb-2">Sunday: Closed</p>
           </div>
         </div>
       </div>
