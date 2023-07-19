@@ -1,12 +1,22 @@
 import Carousel from "./(components)/carousel.comp";
 
+import { Luckiest_Guy } from "@next/font/google";
+
+const luckietGuy = Luckiest_Guy({
+  weight: "400",
+  subsets: ["latin"],
+});
+
 export default function LandingPage() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center bg-white bg-opacity-90 h-screen">
       <Carousel />
-      <div className="container flex flex-col text-center xl:max-w-2xl 2xl:max-w-5xl">
+      <div className="container flex flex-col text-center xl:max-w-2xl 2xl:max-w-7xl">
         <p className="">Delicious Poke only at Poke To The Moon!</p>
-        <p className="">What is Poke?</p>
+        <p className={luckietGuy.className}>
+          <span className="text-3xl text-bold">What is Poke?</span>
+        </p>
+
         <p className="">
           A poke bowl is a Hawaiian dish that typically consists of marinated
           diced raw fish served over a bed of rice with various toppings such as

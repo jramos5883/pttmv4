@@ -1,7 +1,17 @@
+import Image from "next/image";
+
 export default function Menu() {
   return (
-    <div>
-      <h1>Menu!</h1>
+    <div className="flex flex-col items-center bg-white bg-opacity-90">
+      <div className="container bg-black xl:max-w-2xl 2xl:max-w-7xl">
+        <Image
+          src="/images/pokemenu.png"
+          alt="Menu"
+          layout="responsive"
+          width={772}
+          height={1000}
+        />
+      </div>
     </div>
   );
 }
