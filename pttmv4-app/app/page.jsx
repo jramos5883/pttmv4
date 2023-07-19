@@ -9,7 +9,7 @@ const luckietGuy = Luckiest_Guy({
 
 export default function LandingPage() {
   return (
-    <div className="flex flex-col items-center bg-white bg-opacity-90 m-h-screen">
+    <div className="flex flex-col items-center bg-white bg-opacity-90 min-h-screen">
       <Carousel />
       <div className="container flex flex-col text-center xl:max-w-3xl 2xl:max-w-5xl">
         <p className="font-mono text-lg py-2">
