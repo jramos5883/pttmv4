@@ -22,7 +22,7 @@ export default function Carousel() {
   }, [currentSlide, images.length]);
 
   return (
-    <div className="container bg-black xl:max-w-2xl 2xl:max-w-7xl">
+    <div className="container bg-black xl:max-w-3xl 2xl:max-w-5xl border-black border-8 rounded-sm">
       <SwitchTransition>
         <CSSTransition
           key={currentSlide}

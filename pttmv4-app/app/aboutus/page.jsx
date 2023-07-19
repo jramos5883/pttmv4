@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { Luckiest_Guy } from "@next/font/google";
+import { Luckiest_Guy } from "next/font/google";
 
 const luckietGuy = Luckiest_Guy({
   weight: "400",
@@ -9,8 +9,8 @@ const luckietGuy = Luckiest_Guy({
 
 export default function AboutUs() {
   return (
-    <div className="flex flex-col items-center bg-white bg-opacity-90 h-screen">
-      <div className="container bg-black xl:max-w-2xl 2xl:max-w-7xl">
+    <div className="flex flex-col items-center bg-white bg-opacity-90 m-h-screen">
+      <div className="container bg-black xl:max-w-3xl 2xl:max-w-5xl border-black border-8 rounded-sm">
         <Image
           src="/images/pokeAboutUs.jpg"
           alt="Resturant Image"
@@ -19,11 +19,14 @@ export default function AboutUs() {
           height={3000}
         />
       </div>
-      <div className="container flex flex-col text-center xl:max-w-2xl 2xl:max-w-7xl">
-        <p className={luckietGuy.className}>
-          <span className="text-3xl text-bold">About Us</span>
+      <div className="container flex flex-col text-center xl:max-w-3xl 2xl:max-w-5xl">
+        <p className="py-2">
+          <span className={`text-3xl text-bold ${luckietGuy.className}`}>
+            About Us
+          </span>
         </p>
-        <p className="text-indent">
+
+        <p className="text-indent font-mono text-lg pt-2">
           Welcome to Poke To The Moon, The ultimate destination for poke lovers
           in the city of Orange! Our unique poke shop is dedicated to brining
           you the most flavorful and satisfying poke bowls using the freshiest
@@ -34,7 +37,7 @@ export default function AboutUs() {
           bowl experience. Each sauce is carefully prepared with a perfect
           balance of flavors that will leave you wanting more.
         </p>
-        <p className="text-indent">
+        <p className="text-indent font-mono text-lg py-2">
           Our custom poke bowls allow you to create your own masterpiece with a
           wide range of fresh and healthy ingredients to choose from. We also
           offer boujee toppings such as bone marrow, salmon skin, and truffle to
@@ -44,7 +47,7 @@ export default function AboutUs() {
           dedicated to providing exceptional service and making sure that you
           leave our shop satisfied and happy.
         </p>
-        <p className="text-indent">
+        <p className="text-indent font-mono text-lg py-2">
           Thank you for choosing Poke to the Moon as your go-to poke spot. We
           look forward to serving you soon!
         </p>
